@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif ;
     margin: 0;
     padding: 0;
 }
 
 /* HEADER NAVIGATION */
+
 header {
     background-color: #ADB191;
     color: #fff;
@@ -107,7 +108,7 @@ ul li a:hover{
 }
 
 /* Media queries */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     header {
         flex-direction: column;
         align-items: flex-start;
@@ -157,13 +158,55 @@ ul li a:hover{
     .dropdown-content a {
         touch-action: url(Template.html);
     }
+
+    .menu-icon {
+        display: flex;   
+        text-align: right;
+        padding-right: 20px;
+        font-size: 28px;
+        align-items: center;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    .container-content h1{
+        font-size: 18px;
+    }
+
+    .hampir-footer{
+        flex-direction: column;
+    }
+
+    .points-container .points-list {
+        margin-left: 5rem;
+    }
+    
+    .program-images {
+        flex-direction: column; 
+    }
+
+    .banner {
+        margin-top: 11.1rem;
+    }
+
+    .sisi-kiri .kiri-container {
+        border: none;
+    }
+
+    .kiri-text {
+        color: #fff;
+    }
+
 }
+
 /* FOOTER */
+
+
 footer {
-    background-color: #595145;
+    background-color: #ADB191;
     align-items: center;
     text-align: center;
-    /* bottom: 50px; */
+    margin-top: 80px;
 }
 
 .atas {
@@ -174,15 +217,15 @@ footer {
 /* SISI KIRI */
 .sisi-kiri {
     line-height: 0.5;
-    width: 35%;
+    width: 35%; 
     justify-content: center;
     align-items: center;
     color: #fff;
-    border-right: 3px solid #5f8439;
+    border-right: 3px solid #7F906E;
     float: left;
 }
 
-.sisi-kiri img {
+.sisi-kiri img{
     width: 20%;
     height: 20%;
     justify-content: center;
@@ -190,15 +233,13 @@ footer {
     object-fit: cover;
 }
 
-.sisi-kiri h3 {
+.sisi-kiri h3{
     font-size: 30px;
 }
-
-.sisi-kiri h4 {
+.sisi-kiri h4{
     font-size: 25px;
 }
-
-.sisi-kiri p {
+.sisi-kiri p{
     font-size: 20px;
 }
 
@@ -213,7 +254,7 @@ footer {
 .sisi-tengah h3 {
     text-align: left;
     font-size: 30px;
-    color: #ffffff;
+    color: #425E4C;
     margin-top: 15px;
 }
 
@@ -224,7 +265,7 @@ footer {
 .contact-icon p {
     text-align: center;
     align-content: center;
-
+    
     margin: 10px;
 }
 
@@ -257,7 +298,7 @@ footer {
 
 .sisi-kanan h3 {
     font-size: 30px;
-    color: #ffffff;
+    color: #425E4C;
     justify-content: center;
     align-content: center;
     margin-left: 60rem;
@@ -265,7 +306,7 @@ footer {
 
 .sisi-kanan .Menu-content a {
     margin-left: 110px;
-    line-height: 1.5;
+    line-height: 1.5;       
 }
 
 
@@ -278,6 +319,12 @@ footer {
 .copyright p {
     text-align: right;
     margin-right: 10px;
+}
+
+
+/* MAIN */
+.program {
+    padding-top: 8rem;
 }
 
 .program h1 {
@@ -294,44 +341,111 @@ footer {
     margin: 0 30rem;
 }
 
-.main-container {
+.tadarus-container {
     text-align: center;
 }
 
-.main-container img {
+.tadarus-container img {
     padding-top: 4rem;
     width: 50%;
     height: 50%;
 }
 
-.main-container h3 {
-    font-size: 80px;
+.tadarus-container h3 {
+    margin-top: 1rem;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #595145;
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
+.tadarus-container .tadarus-text {
+    text-align: center;
+    width: 100%;
+    color: #51693A;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif ;
+    padding-bottom: 2rem;
+    flex-direction: column;
+}
+
+.kelas-tadarus {
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    justify-content: center;
+    
+}
+
+.kelas-tadarus-container {
+    display: flex;
+}
+
+.box-p {
+    background-color: #E4E4D8;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.isibox-p p {
+    text-decoration: dotted;
+    text-align: center;
+    font-size: 25px;
+    color: #595145;
+}
+
+.sisi-section {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+
+.isi-hafalan ul{
+    padding-top: 2rem;
+    flex-direction: column;
+}   
+
+.text-hafalan li{
+    display: flex;
+    padding: 3px;
+    
+}
+
+.tahfidz-container {
+    padding-top: 2rem;
 }
 
 /* 
-.boximg-1img {
-    margin-top: 2rem;
-    justify-content: center; 
-    align-items: center;
-    margin: 70px !important;
-    width: 460px !important;
-    height: 307px !important;
+.kelas {
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
 
-    /* position: absolute; */
- */
+.kelas-iqro {
+    padding-left: 70px;
+    size: 25px;
+}
+.kelas-quran {
+    padding-right: 70px;
+    size: 25px;
+}
 
-/* .boximg-2 > img {
-position: absolute;
-  top: 200px;
-  right: 100px;
-  width: 630px;
-height: 378px;
-margin: 70px !important;
-width: 312px !important;
-height: 307px !important;
+.text-kelas {
+    color: #595145;
+    font-size: 25px;
+    text-align: center;
 } */
 
+/* 
 .tadarrus {
     color: #595145;
     font-family: Nunito;
@@ -356,48 +470,10 @@ height: 307px !important;
     padding-left: 80px;
 }
 
-.box-p {
-    background-color: #E4E4D8;
-    padding-bottom: 40px;
-    width: 100%;
-}
-
-.isibox-p {
-    font-size: 25px;
-    text-align: center;
-    color: #595145;
-}
 
 .main-container p {
     text-align: center;
 }
-/* 
-.kelas-iqra {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    /* padding-left: 45px; 
-}*/
-/* 
-.kelas-iqro {
-    color: #595145;
-    font-size: 25px;
-    text-align: center;
-    display: flex;
-} */ 
-/* 
-.kelas-quran {
-    color: #595145;
-    font-size: 25px;
-    text-align: center;
-    display: flex;
-}
-
-
-.kelas {
-    display: flex;
-    justify-content: center;
-} */
 
 .box-p1 {
     background-color: #E4E4D8;
@@ -411,29 +487,6 @@ height: 307px !important;
     color: #595145;
 }
 
-.kelas {
-    display: flex;
-    justify-content: center;
-}
-
-.kelas-iqro {
-    padding-left: 70px;
-    size: 25px;
-}
-.kelas-quran {
-    padding-right: 70px;
-    size: 25px;
-}
-
-.text-kelas {
-    color: #595145;
-    font-size: 25px;
-    text-align: center;
-}
-
-/* .isisurah .bagian-kiri ul li{
-    break-inside: auto;    
-} */
 
 .tahfidz {
     color: #595145;
@@ -449,7 +502,6 @@ height: 307px !important;
 .isitahfidz {
     width: 1203px;
     height: 211px;
-    /* flex-shrink: 0; */
     color: #595145;
     font-family: Nunito;
     font-size: 25px;
@@ -522,7 +574,6 @@ height: 307px !important;
 .isisholat {
     width: 1203px;
     height: 211px;
-    /* flex-shrink: 0; */
     color: #595145;
     font-family: Nunito;
     font-size: 25px;
@@ -560,4 +611,4 @@ height: 307px !important;
     font-size: 25px;
     text-align: center;
     color: #595145;
-}
+} */
