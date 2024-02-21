@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif ;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER NAVIGATION */
+header {
+    background-color: #ADB191;
+    color: #fff;
+    padding: 0.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    transition: background-color 0.3s ease;
+    /* backdrop-filter: blur(10px);
+    transition: backdrop-filter 0.3s ease; */
+}
+
+header.scrolled {
+    background-color: rgba(164, 168, 135, 0.8);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo1 img {
+    width: 95px; /* Sesuaikan ukuran logo */
+    height: 95px;
+}
+.logo2 img {
+    width: 80px; /* Sesuaikan ukuran logo */
+    height: 80px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul li a:hover{
+    color: #51693A;
+    transition: 0.3s;
+}
+
+/* Dropdown style */
+.dropdown {
+    position: relative;
+    display: flex;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 15px;
+    background-color: #7f906e77;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 8px;
+    top: 23px;
+}
+
+.dropdown-content a {
+    display: flex;
+    margin: 0 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-icon {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    padding-right: 20px;
+    font-size: 28px;
+    align-items: center;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav{
+        /* display: none;  */
+        padding-left: 20px;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .open {
+        display: none;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+
+    .dropdown-icon {
+        display: block;
+        padding-left: 8px;
+    }
+
+    .dropdown .dropdown-content {
+        top: 0;
+        left: 4rem;
+    }
+
+
+    .dropdown-content a {
+        touch-action: url(Template.html);
+    }
+}
+/* MAIN CONTENT */
+main {
+    margin-top: 120px;
+    transition: margin-top 0.3s ease;
+}
+
+.grid{
+    margin-top: 8rem;
+}
+
+.fotocard{
+    max-width: 80rem;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-description {
+    padding: 15px;
+}
+
+.card-description h3 {
+    margin-top: 0;
+}
+
+.card-description p {
+    margin-bottom: 0;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #ADB191;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.atas {
+    border-bottom: 3px solid #7F906E;
+    padding: 3rem;
+}
+
+/* SISI KIRI */
+.sisi-kiri {
+    line-height: 0.5;
+    width: 35%; 
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-right: 3px solid #7F906E;
+    float: left;
+}
+
+.sisi-kiri img{
+    width: 20%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+.sisi-kiri h3{
+    font-size: 30px;
+}
+.sisi-kiri h4{
+    font-size: 25px;
+}
+.sisi-kiri p{
+    font-size: 20px;
+}
+
+/* SISI TENGAH */
+.sisi-tengah {
+    margin: 10px;
+    float: left;
+    padding-left: 10px;
+    color: #fff;
+}
+
+.sisi-tengah h3 {
+    text-align: left;
+    font-size: 30px;
+    color: #425E4C;
+    margin-top: 15px;
+}
+
+.contact-icon {
+    display: flex;
+}
+
+.contact-icon p {
+    text-align: center;
+    align-content: center;
+    
+    margin: 10px;
+}
+
+.email-icon {
+    display: flex;
+}
+
+.email-icon p {
+    text-align: center;
+    margin-left: 13px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.sisi-tengah .contact-icon {
+    padding-bottom: 10px;
+}
+
+.sisi-tengah .email-icon {
+    padding-bottom: 10px;
+}
+
+/* SISI KANAN */
+.sisi-kanan {
+    text-align: left;
+    margin: 10px;
+}
+
+
+.sisi-kanan h3 {
+    font-size: 30px;
+    color: #425E4C;
+    justify-content: center;
+    align-content: center;
+    margin-left: 60rem;
+}
+
+.sisi-kanan .Menu-content a {
+    margin-left: 110px;
+    line-height: 1.5;       
+}
+
+
+.bawah {
+    color: #fff;
+    width: 100%;
+    padding-bottom: 1px;
+}
+
+.copyright p {
+    text-align: right;
+    margin-right: 10px;
+}
+
