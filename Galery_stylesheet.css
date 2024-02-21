@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 
 body {
     font-family: 'Nunito', sans-serif ;
@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 
-/* HEADER NAVIGATION */
+/* HEADER */
 header {
     background-color: #ADB191;
     color: #fff;
@@ -107,7 +107,7 @@ ul li a:hover{
 }
 
 /* Media queries */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     header {
         flex-direction: column;
         align-items: flex-start;
@@ -157,53 +157,49 @@ ul li a:hover{
     .dropdown-content a {
         touch-action: url(Template.html);
     }
-}
-/* MAIN CONTENT */
-main {
-    margin-top: 120px;
-    transition: margin-top 0.3s ease;
-}
 
-.grid{
-    margin-top: 8rem;
+    .menu-icon {
+        display: flex;   
+        text-align: right;
+        padding-right: 20px;
+        font-size: 28px;
+        align-items: center;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    .container-content h1{
+        font-size: 18px;
+    }
+
+    .hampir-footer{
+        flex-direction: column;
+    }
+
+    .points-container .points-list {
+        margin-left: 5rem;
+    }
+    
+    .program-images {
+        flex-direction: column; 
+    }
+
+    .banner {
+        margin-top: 11.1rem;
+    }
+
+    .sisi-kiri .kiri-container {
+        border: none;
+    }
+
+    .kiri-text {
+        color: #fff;
+    }
+
 }
-
-.fotocard{
-    max-width: 80rem;
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-
-.card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.card-description {
-    padding: 15px;
-}
-
-.card-description h3 {
-    margin-top: 0;
-}
-
-.card-description p {
-    margin-bottom: 0;
-}
-
 
 /* FOOTER */
+
 footer {
     background-color: #ADB191;
     align-items: center;
@@ -321,5 +317,46 @@ footer {
 .copyright p {
     text-align: right;
     margin-right: 10px;
+}
+
+
+/* MAIN */
+
+.grid{
+    margin-top: 8rem;
+}
+
+.fotocard{
+    max-width: 80rem;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-description {
+    padding: 15px;
+}
+
+.card-description h3 {
+    margin-top: 0;
+}
+
+.card-description p {
+    margin-bottom: 0;
 }
 
